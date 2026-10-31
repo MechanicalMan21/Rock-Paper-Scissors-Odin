@@ -17,3 +17,7 @@ const getHumanChoice = () => {
 
 humanChoice = getHumanChoice();
 cpuChoice = getComputerChoice();
+
+// Variables
+let humanScore = 0;
+let computerScore = 0;
