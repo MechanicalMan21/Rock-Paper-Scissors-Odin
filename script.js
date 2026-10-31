@@ -18,7 +18,7 @@ const getHumanChoice = () => {
 humanChoice = getHumanChoice();
 cpuChoice = getComputerChoice();
 
-const playRound = (cpuChoice, humanChoice.toLowerCase()) => {};
+// const playRound = (cpuChoice, humanChoice.toLowerCase()) => {};
 
 // Variables
 let humanScore = 0;
