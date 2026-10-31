@@ -18,6 +18,8 @@ const getHumanChoice = () => {
 humanChoice = getHumanChoice();
 cpuChoice = getComputerChoice();
 
+const playRound = (cpuChoice, humanChoice.toLowerCase()) => {};
+
 // Variables
 let humanScore = 0;
 let computerScore = 0;
