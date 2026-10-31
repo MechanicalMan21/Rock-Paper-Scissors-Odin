@@ -11,4 +11,9 @@ const getComputerChoice = () => {
     }
 };
 
-temp = getComputerChoice();
+const getHumanChoice = () => {
+    return prompt("Enter rock,paper, or scissor"); 
+};
+
+humanChoice = getHumanChoice();
+cpuChoice = getComputerChoice();
