@@ -1,3 +1,6 @@
+let humanScore = 0;
+let computerScore = 0;
+
 const getComputerChoice = () => {
     result = Math.random();
     if (result >= (2/3)) {
@@ -20,6 +23,5 @@ cpuChoice = getComputerChoice();
 
 // const playRound = (cpuChoice, humanChoice.toLowerCase()) => {};
 
-// Variables
-let humanScore = 0;
-let computerScore = 0;
+
+
