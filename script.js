@@ -64,6 +64,20 @@ function playGame() {
     for (let i = 0; i < rounds; i++) {
         playRound(getHumanChoice(), getComputerChoice());
     }
+
+    console.log("Your Score: " + humanScore);
+    console.log("CPU Score: " + computerScore);
+
+    if (humanScore < computerScore) {
+        // Player loses
+        console.log("You lost! Play again?");
+    }
+    else if (humanScore > computerScore) {
+        console.log("Congratulations! You Won! Play again?");
+    }
+    else {
+        console.log("Tie! Play again?");
+    }
 }
 
 
