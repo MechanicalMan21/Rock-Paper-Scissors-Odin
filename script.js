@@ -19,9 +19,6 @@ const getHumanChoice = () => {
     return prompt("Enter rock,paper, or scissor"); 
 };
 
-humanChoice = getHumanChoice();
-cpuChoice = getComputerChoice();
-
 
 // Bigger functions
 function playRound(humanChoice, cpuChoice) {
@@ -64,13 +61,10 @@ function playRound(humanChoice, cpuChoice) {
 }
 
 function playGame() {
-    startGame = playRound(humanChoice, cpuChoice);
     for (let i = 0; i < rounds; i++) {
-        startGame;
+        playRound(getHumanChoice, getComputerChoice);
     }
 }
-
-
 
 
 // int main
