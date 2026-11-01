@@ -9,12 +9,12 @@ const getComputerChoice = () => {
         return "paper";
     }
     else {
-        return "scissor";
+        return "scissors";
     }
 };
 
 const getHumanChoice = () => {
-    return prompt("Enter rock,paper, or scissor"); 
+    return prompt("Enter rock,paper, or scissors"); 
 };
 
 
@@ -52,30 +52,30 @@ function playGame() {
         console.log("You Lost! Rock loses to Paper");
         computerScore++;
     }
-    else if(formattedChoice == "rock" && cpuChoice == "scissor") {
-        console.log("You Won! Rock beats Scissor!");
+    else if(formattedChoice == "rock" && cpuChoice == "scissors") {
+        console.log("You Won! Rock beats Scissors!");
         humanScore++;
     }   // User chooses Paper
     else if(formattedChoice == "paper" && cpuChoice == "rock") {
         console.log("You Won! Paper beats Rock!");
         humanScore++;
     }
-    else if(formattedChoice == "paper" && cpuChoice == "scissor") {
-        console.log("You Lost! Paper loses to Scissor");
+    else if(formattedChoice == "paper" && cpuChoice == "scissors") {
+        console.log("You Lost! Paper loses to Scissors");
         computerScore++;
     }
     else if(formattedChoice == "paper" && cpuChoice == "paper") {
         console.log("Tie!");
-    }   // User chooses Scissor
-    else if(formattedChoice == "scissor" && cpuChoice == "scissor") {
+    }   // User chooses Scissors
+    else if(formattedChoice == "scissors" && cpuChoice == "scissors") {
         console.log("Tie!");
     }
-    else if(formattedChoice == "scissor" && cpuChoice == "paper") {
-        console.log("You Won! Scissor beats Paper!") 
+    else if(formattedChoice == "scissors" && cpuChoice == "paper") {
+        console.log("You Won! Scissors beats Paper!") 
         humanScore++;
     }
-    else if(formattedChoice == "scissor" && cpuChoice == "rock") {
-        console.log("You Lost! Scissor loses to Rock");
+    else if(formattedChoice == "scissors" && cpuChoice == "rock") {
+        console.log("You Lost! Scissors loses to Rock");
         computerScore++;
     }
 
