@@ -1,5 +1,6 @@
 let humanScore = 0;
 let computerScore = 0;
+const rounds = 5;
 
 const getComputerChoice = () => {
     result = Math.random();
@@ -60,9 +61,19 @@ function playRound(humanChoice, cpuChoice) {
         computerScore++;
     }
 
-    
-
 }
 
+function playGame() {
+    startGame = playRound(humanChoice, cpuChoice);
+    for (let i = 0; i < rounds; i++) {
+        startGame;
+    }
+}
+
+
+
+
+// int main
+playGame();
 
 
