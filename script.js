@@ -1,9 +1,7 @@
-let humanScore = 0;
-let computerScore = 0;
 const rounds = 5;
 
 const getComputerChoice = () => {
-    result = Math.random();
+    let result = Math.random();
     if (result >= (2/3)) {
         return "rock";
     }
@@ -21,8 +19,31 @@ const getHumanChoice = () => {
 
 
 // Bigger functions
-function playRound(humanChoice, cpuChoice) {
-    formattedChoice = humanChoice.toLowerCase();
+
+function playGame() {
+    let humanScore = 0;
+    let computerScore = 0;
+    
+    for (let i = 0; i < rounds; i++) {
+        playRound(getHumanChoice(), getComputerChoice());
+    }
+
+    console.log("Your Score: " + humanScore);
+    console.log("CPU Score: " + computerScore);
+
+    if (humanScore < computerScore) {
+        // Player loses
+        console.log("You lost! Play again?");
+    }
+    else if (humanScore > computerScore) {
+        console.log("Congratulations! You Won! Play again?");
+    }
+    else {
+        console.log("Tie! Play again?");
+    }
+
+    function playRound(humanChoice, cpuChoice) {
+    let formattedChoice = humanChoice.toLowerCase();
         // User Chooses Rock
     if (formattedChoice == "rock" && cpuChoice == "rock") {
         console.log("Tie!");
@@ -59,25 +80,6 @@ function playRound(humanChoice, cpuChoice) {
     }
 
 }
-
-function playGame() {
-    for (let i = 0; i < rounds; i++) {
-        playRound(getHumanChoice(), getComputerChoice());
-    }
-
-    console.log("Your Score: " + humanScore);
-    console.log("CPU Score: " + computerScore);
-
-    if (humanScore < computerScore) {
-        // Player loses
-        console.log("You lost! Play again?");
-    }
-    else if (humanScore > computerScore) {
-        console.log("Congratulations! You Won! Play again?");
-    }
-    else {
-        console.log("Tie! Play again?");
-    }
 }
 
 
