@@ -62,7 +62,7 @@ function playRound(humanChoice, cpuChoice) {
 
 function playGame() {
     for (let i = 0; i < rounds; i++) {
-        playRound(getHumanChoice, getComputerChoice);
+        playRound(getHumanChoice(), getComputerChoice());
     }
 }
 
